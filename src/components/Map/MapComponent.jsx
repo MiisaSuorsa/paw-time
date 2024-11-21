@@ -5,6 +5,7 @@ import L from 'leaflet';
 import useFetchDogParks from '../../hooks/fetchDogParks';
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom';
+import PawIcon from './pawIcon.png';
 
 
 const MapComponent = () => {
@@ -39,7 +40,7 @@ const MapComponent = () => {
   };
 
   const dogParkIcon = L.icon({
-      iconUrl:'./pawIcon.png',  // Choose different icon based on the park's status
+      iconUrl:PawIcon,  // Choose different icon based on the park's status
       iconSize: [30, 30],
       iconAnchor: [15, 30],
       popupAnchor: [0, -30],
@@ -57,12 +58,12 @@ const MapComponent = () => {
           {error && <p>Error: {error}</p>}
           {dogParks.map((park) => (
           <Marker
+            icon={dogParkIcon}
             key={park.properties.place_id}
             position={[
               park.geometry.coordinates[1],
               park.geometry.coordinates[0],
             ]}
-            icon={dogParkIcon}
           >
             <Popup>
               <strong>{park.properties.name}</strong>
@@ -80,7 +81,7 @@ const MapComponent = () => {
 };
 
 /*
-
+icon={dogParkIcon}
 
 {loading && <p>Loading dog parks...</p>}
       {error && <p>Error: {error}</p>}
