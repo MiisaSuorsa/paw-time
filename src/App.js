@@ -1,12 +1,16 @@
-import './App.css';
-import MapComponent from "./components/MapComponent.jsx";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import ReservationComponent  from './components/Reservation/ReservationComponent.jsx'
 
 function App() {
   return (
-    <div className="App">
-      <MapComponent/>
-      <h4> This app is hosted at Netlify </h4>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Reservations" element={<ReservationComponent />} />
+      </Routes>
+    </Router>
   );
 }
 
