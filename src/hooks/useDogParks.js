@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 
-//const API_KEY = process.env.GEOAPIFY_KEY; // Securely store the API key in environment variables
-
 
 const useFetchDogParks = (userLocation, radius = 5000) => {
   const [dogParks, setDogParks] = useState([]);

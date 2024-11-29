@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import useFetchDogParks from '../../hooks/fetchDogParks';
+import useFetchDogParks from '../../hooks/useDogParks';
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom';
 import PawIcon from './pawIcon.png';
