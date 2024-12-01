@@ -28,8 +28,8 @@ connectDB();
 
 // Middleware
 app.use(express.json());
-//app.use(cors({ origin: 'https://pawtime.netlify.app/' })); //Netlify url
-app.use(cors({ origin: 'http://localhost:3000' })); //for running locally
+app.use(cors({ origin: 'https://pawtime.netlify.app/' })); //Netlify url
+//app.use(cors({ origin: 'http://localhost:3000' })); //for running locally
 
 // Routes
 app.use('/api/reservations', require('./routes/reservationRoutes'));

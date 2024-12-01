@@ -16,8 +16,6 @@ router.get('/', async (req, res) => {
 
     const reservations = await Reservation.find(query);
 
-    console.log('Reservations found:', reservations);
-    
     console.log(reservations);
     res.json(reservations);
   } catch (error) {
