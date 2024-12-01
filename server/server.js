@@ -28,7 +28,7 @@ connectDB();
 
 // Middleware
 app.use(express.json());
-app.use(cors({ origin: 'https://pawtime.netlify.app' })); //Netlify url
+app.use(cors({ origin: 'https://pawtime.netlify.app', methods: ['GET', 'POST'] })); //Netlify url
 //app.use(cors({ origin: 'http://localhost:3000' })); //for running locally
 
 // Routes
