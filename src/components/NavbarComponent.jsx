@@ -1,7 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import PawIcon from './Map/pawIcon.png';
 
 //Navbar component copied from https://react-bootstrap.netlify.app/docs/components/navbar
