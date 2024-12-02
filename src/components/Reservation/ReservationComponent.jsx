@@ -4,7 +4,7 @@ import ReservationForm from "./ReservationForm";
 
 function ReservationComponent() {
   return (
-    <div class="Reservations">
+    <div className="Reservations">
         <NavbarComponent/>
         <h2>Reservations</h2>
         <ReservationList/>

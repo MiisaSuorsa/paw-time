@@ -12,9 +12,11 @@ function ReservationList() {
           {error && <p>Error: {error}</p>}
           {reservations.map(reservation => (
           <li key={reservation._id}>
-            <strong>Park ID:</strong> {reservation.parkId} <br />
-            <strong>Date:</strong> {reservation.date} <br />
-            <strong>Time Slot:</strong> {reservation.timeSlot}
+            <strong>Park ID:</strong> {reservation.parkId} <br/>
+            <strong>Date:</strong> {reservation.date} <br/>
+            <strong>Time Slot:</strong> {reservation.timeSlot} <br/>
+            <strong>Want others to join:</strong> {reservation.allowOthersToJoin ? 'Yes' : 'No'} <br/>
+            <strong>Description:</strong> {reservation.description}
           </li>
         ))}
       </ul>

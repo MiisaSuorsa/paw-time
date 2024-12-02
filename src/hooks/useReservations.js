@@ -10,7 +10,7 @@ const useReservations = () => {
     useEffect(() => {
       const fetchReservations = async () => {
         try {
-          //const response = await fetch('http://localhost:5000/api/reservations');
+          //const response = await fetch('http://localhost:5000/api/reservations'); // fetch when running the app locally
           const response = await fetch('https://paw-time.onrender.com/api/reservations');
           if (!response.ok) {
             throw new Error('Failed to fetch data');

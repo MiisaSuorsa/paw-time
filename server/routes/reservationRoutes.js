@@ -23,9 +23,10 @@ router.get('/', async (req, res) => {
   }
 });
 
-// @route POST /api/reservations
-// @desc Save a new reservation
+// POST /api/reservations
+// Save a new reservation
 router.post('/', async (req, res) => {
+  console.log(req.body);
   const newReservation = new Reservation(req.body);
   try {
     const savedReservation = await newReservation.save();
