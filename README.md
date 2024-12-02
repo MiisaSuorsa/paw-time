@@ -6,6 +6,8 @@ This is a project work for Full stack -course in LUT in Autumn 2024.
 
 The project is planned to be done using React, Node.js, open data API, and MongoDB.
 
+The frontens is hosted in Netlify, and backend is hosted in Render. For running the app locally, replace netlify and render links on the hooks and server.js file.
+Public url: https://pawtime.netlify.app/ 
 
 # Getting Started with React App
 
